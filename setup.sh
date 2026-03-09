@@ -1,6 +1,4 @@
 #!/bin/bash
-# Переходим в постоянное хранилище Vast.ai
-cd /workspace
 
 # 5. Установка нод
 cd custom_nodes
@@ -53,5 +51,6 @@ curl -L -o "models/diffusion_models/flux-2-klein-9b-fp8.safetensors" "$HF_BASE/f
 # Апскейлеры
 curl -L -o "models/upscale_models/4x-ClearRealityV1.pth" "$HF_BASE/4x-ClearRealityV1.pth?download=true"
 curl -L -o "models/upscale_models/RealESRGAN_x4plus_anime_6B.pth" "$HF_BASE/RealESRGAN_x4plus_anime_6B.pth?download=true"
+
 
 echo "Установка завершена. Запусти сервер командой: python main.py --listen 0.0.0.0 --port 8188"
