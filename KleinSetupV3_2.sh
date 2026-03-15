@@ -9,7 +9,7 @@ fi
 apt-get update && apt-get install -y aria2c
 
 # 2. Определяем директорию. Снова напоминаю: убедись, что путь актуален для твоего образа.
-DEST_DIR="/workspace/ComfyUI/models/checkpoints"
+DEST_DIR="/workspace"
 mkdir -p "$DEST_DIR"
 
 # 3. Переменная с аргументами для максимальной скорости: 
